@@ -6,11 +6,11 @@ if (input) {
 
   const flavorCounter = {};
 
-  for (let i = 0; iceCreamFlavors.length; i++) {
-    const flavor = iceCreamFlavors[i];
+  for (let i = 0; i < iceCreamFlavors.length; i++) {
+    const flavor = iceCreamFlavors[i].trim();
 
     if (flavorCounter[flavor]) {
-      flavorCounter[flavor] += flavorCounter[flavor]++;
+      flavorCounter[flavor]++;
     } else {
       flavorCounter[flavor] = 1;
     }
